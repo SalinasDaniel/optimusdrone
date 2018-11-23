@@ -17,6 +17,7 @@ body {
                 }
                 @include breakpoint(tablet) {
                     display: block;
+                    margin-top: -25px;
                 }
                 .img {
                     padding: 0;
