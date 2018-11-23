@@ -1,0 +1,65 @@
+body {
+    main {
+        .clientes {
+            background-color: #f0f0f1;
+            text-align: center;
+            padding-bottom: 10%;
+            p {
+                color: #000000;
+                margin-bottom: 0;
+                margin-top: 200px;
+            }
+            .separador {
+                .s-1 {
+                    border-top: 1px solid #8a3788;
+                    position: absolute;
+                    margin-top: 28px;
+                    @include breakpoint(phone) {
+                        width: 10%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 19%;
+                    }
+                    @include breakpoint(desktop) {
+                        width: 33%;
+                    }
+                }
+                .s-2 {
+                    border-top: 1px solid #8a3788;
+                    position: absolute;
+                    margin-top: 28px;
+                    @include breakpoint(phone) {
+                        width: 10%;
+                        left: 90%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 19%;
+                        left: 81%;
+                    }
+                    @include breakpoint(desktop) {
+                        width: 33%;
+                        left: 67%;
+                    }
+                }
+            }
+            h2 {
+                color: #005FFF;
+                font-weight: bold;
+                font-size: 44px;
+                @include breakpoint(phone) {
+                    font-size: 35px;
+                }
+            }
+            .img-client {
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 6%;
+                padding-right: 6%;
+                margin-top: 100px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

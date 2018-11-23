@@ -1,0 +1,140 @@
+body {
+    main {
+        .popups {
+            .modal-dialog {
+                margin-top: 100px;
+                @include breakpoint(phone) {
+                    max-width: 100%;
+                    margin-top: 36px;
+                }
+                @include breakpoint(tablet) {
+                    max-width: 94%;
+                }
+                @include breakpoint(desktop) {
+                    max-width: 70%;
+                }
+                @media screen and (min-width: 1900px) {
+                    margin-top: 281px;
+                }
+                .modal-content {
+                    .close {
+                        position: absolute;
+                        z-index: 1;
+                        width: 42px;
+                        height: 42px;
+                        left: 97%;
+                        top: -3%;
+                        color: #FFFFFF;
+                        text-align: center;
+                        background-color: #005FFF;
+                        opacity: 1;
+                        border-radius: 30px;
+                        @include breakpoint(phone) {
+                            left: 90%;
+                            top: -1%;
+                        }
+                        @media screen and (min-width: 1900px) {
+                            left: 98%;
+                        }
+                    }
+                    .modal-body {
+                        padding-bottom: 0;
+                        padding-top: 0;
+                        .description-form {
+                            .description {
+                                padding-bottom: 4%;
+                                text-align: center;
+                                animation: back_animate 25s infinite linear;
+                                @keyframes back_animate {
+                                    0% {
+                                        background: linear-gradient(-10deg, #23A6D5, #23D5AB);
+                                    }
+                                    10% {
+                                        background: linear-gradient(-10deg, #23A6D5, #EE7752);
+                                    }
+                                    20% {
+                                        background: linear-gradient(-10deg, #23A6D5, #E73C7E);
+                                    }
+                                    30% {
+                                        background: linear-gradient(-10deg, #EE7752, #E73C7E);
+                                    }
+                                    40% {
+                                        background: linear-gradient(-10deg, #EE7752, #23D5AB);
+                                    }
+                                    50% {
+                                        background: linear-gradient(-10deg, #EE7752, #23A6D5);
+                                    }
+                                    60% {
+                                        background: linear-gradient(-10deg, #23D5AB, #23A6D5);
+                                    }
+                                    70% {
+                                        background: linear-gradient(-10deg, #23D5AB, #EE7752);
+                                    }
+                                    80% {
+                                        background: linear-gradient(-10deg, #23D5AB, #E73C7E);
+                                    }
+                                    90% {
+                                        background: linear-gradient(-10deg, #E73C7E, #23A6D5);
+                                    }
+                                    100% {
+                                        background: linear-gradient(-10deg, #E73C7E, #23D5AB);
+                                    }
+                                }
+                                .dron {
+                                    margin-top: 70px;
+                                }
+                                .flecha {
+                                    margin-top: 20px;
+                                }
+                            }
+                            .form {
+                                text-align: center;
+                                @include breakpoint(phone) {
+                                    padding-bottom: 7%;
+                                }
+                                img {
+                                    margin-top: 57px;
+                                    margin-bottom: 25px;
+                                    @include breakpoint(phone) {
+                                        width: 100%;
+                                    }
+                                }
+                                form {
+                                    padding-left: 9%;
+                                    padding-right: 9%;
+                                    input {
+                                        height: 59px;
+                                        border-radius: 43px;
+                                        margin-bottom: 13px;
+                                        background-color: #f0f0f1;
+                                        padding-left: 7%;
+                                        border: none;
+                                    }
+                                     ::placeholder {
+                                        color: #b2b2b8;
+                                        font-weight: 900;
+                                    }
+                                    .bton {
+                                        background-color: #005FFF;
+                                        border: solid 1px #005FFF;
+                                        color: #FFFFFF;
+                                        width: 100%;
+                                        font-size: 23px;
+                                        border-radius: 30px;
+                                        transition: 1s;
+                                        height: 60px;
+                                    }
+                                    .bton:hover {
+                                        background-color: #FFFFFF;
+                                        border: solid 1px #005FFF;
+                                        color: #005FFF;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

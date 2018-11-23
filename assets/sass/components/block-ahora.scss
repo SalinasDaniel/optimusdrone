@@ -1,0 +1,51 @@
+body {
+    main {
+        .block-ahora {
+            text-align: center;
+            .title {
+                color: #333333;
+                margin-top: 220px;
+                font-size: 33px;
+                opacity: .6;
+                @include breakpoint(phone) {
+                    margin-top: 60px;
+                }
+            }
+            .subtitle {
+                color: #333333;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+                @include breakpoint(phone) {
+                    font-size: 80px;
+                }
+                @include breakpoint(tablet) {
+                    font-size: 165px;
+                }
+                @include breakpoint(desktop) {
+                    font-size: 188px;
+                }
+            }
+            button {
+                background-color: #f9225e;
+                color: #FFFFFF;
+                border: solid 1px #f9225e;
+                width: 50%;
+                font-size: 35px;
+                border-radius: 44px;
+                cursor: pointer;
+                transition: 1s;
+                @include breakpoint(phone) {
+                    width: 85%;
+                }
+                @media screen and (min-width: 1900px) {
+                    width: 29%;
+                }
+            }
+            button:hover {
+                background-color: #FFFFFF;
+                color: #f9225e;
+                border: solid 1px #f9225e;
+            }
+        }
+    }
+}

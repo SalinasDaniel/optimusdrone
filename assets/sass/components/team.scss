@@ -1,0 +1,117 @@
+body {
+    main {
+        .team {
+            text-align: center;
+            padding-top: 12%;
+            .separador {
+                .s-1 {
+                    border-top: 1px solid #8a3788;
+                    position: absolute;
+                    margin-top: 56px;
+                    @include breakpoint(phone) {
+                        width: 10%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 19%;
+                    }
+                    @include breakpoint(desktop) {
+                        width: 33%;
+                    }
+                }
+                .s-2 {
+                    border-top: 1px solid #8a3788;
+                    position: absolute;
+                    margin-top: 56px;
+                    @include breakpoint(phone) {
+                        width: 10%;
+                        left: 90%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 19%;
+                        left: 81%;
+                    }
+                    @include breakpoint(desktop) {
+                        width: 33%;
+                        left: 67%;
+                    }
+                }
+            }
+            h2 {
+                color: #005FFF;
+                font-weight: bold;
+                font-size: 44px;
+                margin-top: 26px;
+            }
+            .integrantes {
+                margin-right: 0;
+                margin-left: 0;
+                margin-top: 115px;
+                padding-left: 5%;
+                padding-right: 5%;
+                .integrante {
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    @include breakpoint(phone) {
+                        margin-bottom: 100px;
+                    }
+                    .int {
+                        border-radius: 30px;
+                        transition: 1s;
+                        .nombre {
+                            text-align: left;
+                            padding-left: 10%;
+                            padding-right: 10%;
+                            padding-top: 4%;
+                            padding-bottom: 4%;
+                            background-color: #e7ebee;
+                            .italic {
+                                font-weight: normal;
+                                font-style: italic;
+                            }
+                            p {
+                                color: #000000;
+                                margin-bottom: 0;
+                                @include breakpoint(phone) {
+                                    font-size: 26px;
+                                }
+                                @include breakpoint(tablet) {
+                                    font-size: 17px;
+                                }
+                            }
+                        }
+                        .profesion {
+                            background-color: #005FFF;
+                            padding-left: 11%;
+                            padding-right: 11%;
+                            padding-top: 8%;
+                            padding-bottom: 4%;
+                            text-align: left;
+                            border-radius: 0px 0px 30px 30px;
+                            p {
+                                color: #FFFFFF;
+                                line-height: 2;
+                                @include breakpoint(phone) {
+                                    font-size: 24px;
+                                }
+                                @include breakpoint(tablet) {
+                                    line-height: 1.3;
+                                    font-size: 22px;
+                                }
+                                @media screen and (min-width: 1900px) {
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                        img {
+                            width: 100%;
+                            border-radius: 30px 30px 0px 0px;
+                        }
+                    }
+                }
+                .int:hover {
+                    box-shadow: 1px 2px 17px 3px rgba(0, 0, 0, 0.75);
+                }
+            }
+        }
+    }
+}

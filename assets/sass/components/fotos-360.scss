@@ -1,0 +1,81 @@
+body {
+    main {
+        .fotos-360 {
+            text-align: center;
+            padding-top: 10%;
+            background-color: #f0f0f1;
+            .separador {
+                .s-1 {
+                    border-top: 1px solid #8a3788;
+                    position: absolute;
+                    margin-top: 56px;
+                    @include breakpoint(phone) {
+                        width: 10%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 19%;
+                    }
+                    @include breakpoint(desktop) {
+                        width: 33%;
+                    }
+                }
+                .s-2 {
+                    border-top: 1px solid #8a3788;
+                    position: absolute;
+                    margin-top: 56px;
+                    @include breakpoint(phone) {
+                        width: 10%;
+                        left: 90%;
+                    }
+                    @include breakpoint(tablet) {
+                        width: 19%;
+                        left: 81%;
+                    }
+                    @include breakpoint(desktop) {
+                        width: 33%;
+                        left: 67%;
+                    }
+                }
+            }
+            h2 {
+                color: #005FFF;
+                font-weight: bold;
+                font-size: 44px;
+                @include breakpoint(phone) {
+                    font-size: 35px;
+                }
+            }
+            p {
+                color: #000000;
+            }
+            .hand {
+                i {
+                    font-size: 73px;
+                    color: #000000;
+                }
+            }
+            button {
+                background-color: transparent;
+                border: solid 1px #000000;
+                color: #000000;
+                font-size: 22px;
+                border-radius: 30px;
+                cursor: pointer;
+                transition: 1s;
+                margin-top: 60px;
+                @include breakpoint(phone) {
+                    width: 55%;
+                }
+                @include breakpoint(tablet) {
+                    width: 31%;
+                }
+                @include breakpoint(desktop) {
+                    width: 15%;
+                }
+            }
+            button:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

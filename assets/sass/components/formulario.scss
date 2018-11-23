@@ -1,0 +1,73 @@
+body {
+    main {
+        .formulario {
+            padding-bottom: 10%;
+            .form-description {
+                margin-right: 0;
+                margin-left: 0;
+                padding-left: 11%;
+                padding-right: 11%;
+                margin-top: 130px;
+                @include breakpoint(phone) {
+                    margin-top: 50px;
+                }
+                .description {
+                    text-align: center;
+                    p {
+                        color: #000000;
+                        margin-top: 28px;
+                    }
+                    h3 {
+                        color: #005FFF;
+                        font-weight: bold;
+                        font-size: 44px;
+                        transform: scaleX(1.3);
+                        @include breakpoint(phone) {
+                            font-size: 35px;
+                        }
+                    }
+                }
+                .form {
+                    text-align: center;
+                    img {
+                        @include breakpoint(phone) {
+                            width: 100%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 100%;
+                        }
+                    }
+                    form {
+                        margin-top: 22px;
+                        input {
+                            background-color: #f0f0f1;
+                            border-radius: 36px;
+                            height: 50px;
+                            margin-bottom: 11px;
+                            border: none;
+                            padding-left: 7%;
+                        }
+                         ::placeholder {
+                            color: #b2b2b8;
+                            font-weight: 900;
+                        }
+                        .bton {
+                            background-color: #005FFF;
+                            border: solid 1px #005FFF;
+                            color: #FFFFFF;
+                            width: 100%;
+                            font-size: 23px;
+                            border-radius: 30px;
+                            transition: 1s;
+                        }
+                        .bton:hover {
+                            background-color: #FFFFFF;
+                            border: solid 1px #005FFF;
+                            color: #005FFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
