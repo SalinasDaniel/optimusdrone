@@ -2,13 +2,14 @@
 <html lang="es">
 
 <head>
-    <title>OptimusDrone</title>
+    <title>Optimus Drone</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Produccion Audivisual con Drone. Nuestra pasión es capturar grandes momentos y lugares desde el aire">
     <link href="index.php" rel="canonical">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel='stylesheet' id='ipanorama_ipanorama-css' href='http://optimusdrone.co/wp-content/plugins/ipanorama-360-virtual-tour-builder-lite/lib/ipanorama.css?ver=1.3.8' type='text/css' media='all' />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -53,7 +54,7 @@
                 <div class="col-sm-8">
                     <div class="contact">
                         <a href="tel:+573194901099">
-                            <p><i class="fas fa-phone-volume"></i> (+57) 319 4901099 Bogotá, Colombia</p>
+                            <p><i class="fas fa-phone-volume"></i> (+57) 319 6713865 Bogotá, Colombia</p>
                         </a>
                     </div>
                 </div>
@@ -98,7 +99,7 @@
             </div>
         </section>
 
-        <section class="video block">
+        <section class="video">
             <br>
             <div class="separador">
                 <div class="s-1"></div>
@@ -119,8 +120,7 @@
             <h2>¿Cuál es el tipo de <br> Video que necesitas</h2>
 
             <div class="row block-item-derecha color-rosado block" data-rotate-x="10deg" data-move-z="-50px" data-move-y="50px">
-                <div class="col-sm-8 img">
-                    <img src="assets/images/Centro-Comercial.jpg" alt="Comercial">
+                <div class="col-sm-8 img fondo-1">
                 </div>
                 <div class="col-sm-4 description c-1">
                     <img src="assets/images/Bombillo.png" alt="Promoción Comercial Publicidad">
@@ -133,14 +133,12 @@
                     <img src="assets/images/Casa.png" alt="Arquitectura">
                     <button data-toggle="modal" data-target="#myModal3">Quiero Solicitar Mi Video</button>
                 </div>
-                <div class="col-sm-8 img">
-                    <img src="assets/images/Finca.jpg" alt="Arquitectura Promocion Inmobiliaria">
+                <div class="col-sm-8 img fondo-2">
                 </div>
             </div>
 
             <div class="row block-item-derecha color-verde block" data-rotate-x="10deg" data-move-z="-50px" data-move-y="50px">
-                <div class="col-sm-8 img">
-                    <img src="assets/images/Boda.jpg" alt="Eventos">
+                <div class="col-sm-8 img fondo-3">
                 </div>
                 <div class="col-sm-4 description c-3">
                     <img src="assets/images/Pareja.png" alt="Eventos Culturales Deportivos">
@@ -153,14 +151,12 @@
                     <img src="assets/images/grupo.png" alt="Foto Institucional">
                     <button data-toggle="modal" data-target="#myModal5">Quiero Solicitar Mi Video</button>
                 </div>
-                <div class="col-sm-8 img">
-                    <img src="assets/images/Grupo-Personas.jpg" alt="Institucional Corporativo Empresarial">
+                <div class="col-sm-8 img fondo-4">
                 </div>
             </div>
 
             <div class="row block-item-derecha color-morado block" data-rotate-x="10deg" data-move-z="-50px" data-move-y="50px">
-                <div class="col-sm-8 img">
-                    <img src="assets/images/Piloto.jpg" alt="Produccion">
+                <div class="col-sm-8 img fondo-5">
                 </div>
                 <div class="col-sm-4 description c-5">
                     <img src="assets/images/Cinema.png" alt="Produccion Audiovisual">
@@ -173,8 +169,7 @@
                     <img src="assets/images/Facebook.png" alt="Videos">
                     <button data-toggle="modal" data-target="#myModal7">Quiero Solicitar Mi Video</button>
                 </div>
-                <div class="col-sm-8 img">
-                    <img src="assets/images/Ara.jpg" alt="Redes Sociales">
+                <div class="col-sm-8 img fondo-6">
                 </div>
             </div>
         </section>
@@ -307,6 +302,11 @@
             <div class="hand">
                 <i class="far fa-hand-paper"></i>
             </div>
+
+            <div class="fotos">
+
+            </div>
+
             <button data-toggle="modal" data-target="#myModal9">Cotiza tu foto 360°</button>
         </section>
 
@@ -358,8 +358,8 @@
                 <div class="col-sm-6 description">
                     <p>Es el momento de hacer tu video realidad</p>
                     <p class="text"> <strong> Contácte con Nosotros Hoy </strong> </p>
-                    <p class="ciudad">Bogota, Colombia</p>
-                    <h4>(+57) 319 4901099</h4>
+                    <p class="ciudad">Bogota, Colombia &nbsp;</p>
+                    <h4>(+57) 319 6713865</h4>
                 </div>
             </div>
         </section>

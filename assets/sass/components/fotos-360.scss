@@ -54,6 +54,15 @@ body {
                     color: #000000;
                 }
             }
+            .fotos {
+                padding-left: 14%;
+                padding-right: 14%;
+                margin-top: 70px;
+                @include breakpoint(phone) {
+                    padding-left: 6%;
+                    padding-right: 6%;
+                }
+            }
             button {
                 background-color: transparent;
                 border: solid 1px #000000;

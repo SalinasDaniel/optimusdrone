@@ -249,6 +249,54 @@ body {
                 }
             }
         }
+        .fondo-1 {
+            background-image: url('../../assets/images/Centro-Comercial.jpg');
+            background-size: cover;
+            @include breakpoint(phone) {
+                height: 250px;
+                border-radius: 35px 35px 0px 0px;
+            }
+        }
+        .fondo-2 {
+            background-image: url('../../assets/images/Finca.jpg');
+            background-size: cover;
+            @include breakpoint(phone) {
+                height: 250px;
+                border-radius: 0px 0px 35px 35px;
+            }
+        }
+        .fondo-3 {
+            background-image: url('../../assets/images/Boda.jpg');
+            background-size: cover;
+            @include breakpoint(phone) {
+                height: 250px;
+                border-radius: 35px 35px 0px 0px;
+            }
+        }
+        .fondo-4 {
+            background-image: url('../../assets/images/Grupo-Personas.jpg');
+            background-size: cover;
+            @include breakpoint(phone) {
+                height: 250px;
+                border-radius: 0px 0px 35px 35px;
+            }
+        }
+        .fondo-5 {
+            background-image: url('../../assets/images/Piloto.jpg');
+            background-size: cover;
+            @include breakpoint(phone) {
+                height: 250px;
+                border-radius: 35px 35px 0px 0px;
+            }
+        }
+        .fondo-6 {
+            background-image: url('../../assets/images/Ara.jpg');
+            background-size: cover;
+            @include breakpoint(phone) {
+                height: 250px;
+                border-radius: 0px 0px 35px 35px;
+            }
+        }
         .color-rosado:hover {
             background-color: #f9225e;
             filter: grayscale(0);

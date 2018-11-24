@@ -20,7 +20,8 @@ body header .logo-contact {
       text-align: left;
       margin-top: 16px; }
       body header .logo-contact .row .contact a {
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        font-size: 22px; }
       body header .logo-contact .row .contact a:hover {
         color: #FFFFFF;
         text-decoration: none; }
@@ -402,6 +403,54 @@ body main .block-item-izquierda {
     body main .block-item-izquierda .c-6 {
       background-color: #005FFF; } }
 
+body main .fondo-1 {
+  background-image: url("../../assets/images/Centro-Comercial.jpg");
+  background-size: cover; }
+  @media (max-width: 667px) {
+    body main .fondo-1 {
+      height: 250px;
+      border-radius: 35px 35px 0px 0px; } }
+
+body main .fondo-2 {
+  background-image: url("../../assets/images/Finca.jpg");
+  background-size: cover; }
+  @media (max-width: 667px) {
+    body main .fondo-2 {
+      height: 250px;
+      border-radius: 0px 0px 35px 35px; } }
+
+body main .fondo-3 {
+  background-image: url("../../assets/images/Boda.jpg");
+  background-size: cover; }
+  @media (max-width: 667px) {
+    body main .fondo-3 {
+      height: 250px;
+      border-radius: 35px 35px 0px 0px; } }
+
+body main .fondo-4 {
+  background-image: url("../../assets/images/Grupo-Personas.jpg");
+  background-size: cover; }
+  @media (max-width: 667px) {
+    body main .fondo-4 {
+      height: 250px;
+      border-radius: 0px 0px 35px 35px; } }
+
+body main .fondo-5 {
+  background-image: url("../../assets/images/Piloto.jpg");
+  background-size: cover; }
+  @media (max-width: 667px) {
+    body main .fondo-5 {
+      height: 250px;
+      border-radius: 35px 35px 0px 0px; } }
+
+body main .fondo-6 {
+  background-image: url("../../assets/images/Ara.jpg");
+  background-size: cover; }
+  @media (max-width: 667px) {
+    body main .fondo-6 {
+      height: 250px;
+      border-radius: 0px 0px 35px 35px; } }
+
 body main .color-rosado:hover {
   background-color: #f9225e;
   filter: grayscale(0); }
@@ -699,6 +748,14 @@ body main .fotos-360 {
   body main .fotos-360 .hand i {
     font-size: 73px;
     color: #000000; }
+  body main .fotos-360 .fotos {
+    padding-left: 14%;
+    padding-right: 14%;
+    margin-top: 70px; }
+    @media (max-width: 667px) {
+      body main .fotos-360 .fotos {
+        padding-left: 6%;
+        padding-right: 6%; } }
   body main .fotos-360 button {
     background-color: transparent;
     border: solid 1px #000000;
@@ -872,6 +929,9 @@ body main .contacto {
     margin-top: 50px; }
     body main .contacto .image-description .img {
       text-align: center; }
+      @media (max-width: 667px) {
+        body main .contacto .image-description .img img {
+          width: 100%; } }
     @media (max-width: 667px) {
       body main .contacto .image-description .description {
         margin-top: 62px; } }
@@ -879,7 +939,7 @@ body main .contacto {
       margin: 0; }
       @media (max-width: 667px) {
         body main .contacto .image-description .description p {
-          font-size: 22px; } }
+          font-size: 21px; } }
       @media (min-width: 668px) and (max-width: 1024px) {
         body main .contacto .image-description .description p {
           font-size: 21px; } }
@@ -888,7 +948,7 @@ body main .contacto {
           font-size: 26px; } }
     @media (max-width: 667px) {
       body main .contacto .image-description .description .text {
-        font-size: 33px; } }
+        font-size: 32px; } }
     @media (min-width: 668px) and (max-width: 1024px) {
       body main .contacto .image-description .description .text {
         font-size: 31px; } }
@@ -897,18 +957,19 @@ body main .contacto {
         font-size: 40px; } }
     body main .contacto .image-description .description .ciudad {
       position: absolute;
-      left: 64%;
       font-size: 19px; }
       @media (max-width: 667px) {
         body main .contacto .image-description .description .ciudad {
-          top: 90%; } }
+          top: 90%;
+          left: 58%; } }
       @media (min-width: 668px) and (max-width: 1024px) {
         body main .contacto .image-description .description .ciudad {
           left: 50%;
           top: 83%; } }
       @media (min-width: 1025px) {
         body main .contacto .image-description .description .ciudad {
-          top: 75%; } }
+          top: 75%;
+          left: 68%; } }
       @media screen and (min-width: 1900px) {
         body main .contacto .image-description .description .ciudad {
           left: 46%; } }

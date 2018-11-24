@@ -50,6 +50,11 @@ body {
                 margin-top: 50px;
                 .img {
                     text-align: center;
+                    img {
+                        @include breakpoint(phone) {
+                            width: 100%;
+                        }
+                    }
                 }
                 .description {
                     @include breakpoint(phone) {
@@ -58,7 +63,7 @@ body {
                     p {
                         margin: 0;
                         @include breakpoint(phone) {
-                            font-size: 22px;
+                            font-size: 21px;
                         }
                         @include breakpoint(tablet) {
                             font-size: 21px;
@@ -69,7 +74,7 @@ body {
                     }
                     .text {
                         @include breakpoint(phone) {
-                            font-size: 33px;
+                            font-size: 32px;
                         }
                         @include breakpoint(tablet) {
                             font-size: 31px;
@@ -80,10 +85,10 @@ body {
                     }
                     .ciudad {
                         position: absolute;
-                        left: 64%;
                         font-size: 19px;
                         @include breakpoint(phone) {
                             top: 90%;
+                            left: 58%;
                         }
                         @include breakpoint(tablet) {
                             left: 50%;
@@ -91,6 +96,7 @@ body {
                         }
                         @include breakpoint(desktop) {
                             top: 75%;
+                            left: 68%;
                         }
                         @media screen and (min-width: 1900px) {
                             left: 46%;
